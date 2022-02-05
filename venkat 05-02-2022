@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<string.h>
+
+
+int main()
+{
+	char str[20];
+	int l=0,i;
+	printf("Enter Any String\t");
+	gets(str);
+	
+	for(i=0;i<strlen(str);i++)
+	switch(str[i])
+	{
+		case 'A':
+		case 'a':
+				l++;
+				break;
+		case 'E':
+		case 'e':
+				l++;
+				break;
+		case 'I':
+		case 'i':
+				l++;
+				break;
+		case 'O':
+		case 'o':
+				l++;
+				break;
+		case 'U':
+		case 'u':
+				l++;
+				break;
+	}
+
+	
+		printf("Vowel=%d\n",l);
+		printf("Consonents=%d",strlen(str)-l);
+		
+	}
