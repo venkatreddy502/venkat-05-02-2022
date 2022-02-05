@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+
+
+int main()
+{
+	char str[10],str1[10];
+	printf("Enter Any String\t");
+	gets(str);
+	strcpy(str1,str);
+	strrev(str1);
+	if(strcmp(str,str1)==0)
+		printf("Palindrom");
+	else
+		printf("Not Palendrom");
+	}
